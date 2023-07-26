@@ -1,0 +1,485 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #333;
+
+// Navbar Styles
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-left: -6%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-item {
+      margin-right: 30px;
+
+      .nav-link {
+        color: $secondary-color;
+        padding: 0;
+        font-size:16px;
+        text-transform: uppercase;
+        white-space: nowrap; // Prevent text wrapping
+
+
+        &:hover {
+          background-color: #f8f9fa;
+        }
+      }
+      .Red{
+        color: rgb(248, 47, 47);
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      font-size: 30px;
+      color: $secondary-color;
+      cursor: pointer;
+      margin-right: 15px;
+      padding: 4px;
+      margin-right: 9%;
+
+      &:hover {
+        color:#777;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+
+   
+
+    .navbar-brand img {
+      width: 50%;
+      height: auto;
+      margin-bottom:- 10%;
+      
+    }
+  }
+  .collapse.show {
+    animation: fadeIn 0.3s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  // Sidebar Styles
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; // Change left to right
+    width: 400px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transform: translateX(100%); // Change -100% to 100%
+    transition: transform 0.3s ease-in-out;
+
+    &.show {
+      transform: translateX(0);
+    }
+  }
+
+  // Show Filter button styles
+  #filterToggle {
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #ffffff;
+    color: black;
+    font-size: 30px;
+  }
+
+
+
+.mb-3 {
+    .btn-link {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000000;
+      font-family:Arial, Helvetica, sans-serif;
+      
+    }
+  
+    .filter-divider {
+      margin: 0;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+  }
+
+/* Filter Options */
+.filter-options {
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.collapse.show .filter-options {
+  max-height: 500px; /* Adjust the max-height as needed */
+  overflow-y: auto;
+  padding: 10px;
+}
+.show-filter{
+    display: none;
+
+}
+
+}
+.card {
+    border: 1px solid #ccc;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    height: auto;
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    .card-img-top {
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .card-body {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  
+    .card-text {
+      margin-top: 5px;
+    }
+  
+    .product-price {
+      font-size: 16px;
+      color: #f83636;
+      margin-top: 10px;
+    }
+  
+    .btn-primary {
+      margin-top: 15px;
+    }
+  }
+  
+   a.btn.btn-primary {
+    color: #fff;
+    background-color :#787477;
+    border-color :#787477;
+    font-weight: bold;
+  }
+  .tag {
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 6px 10px;
+    border-radius: 15px;
+    margin-left: 30px;
+  
+    .tag-text {
+      margin-right: 5px;
+    }
+  .gray{
+    color: lightgrey;
+    font-weight: normal;
+
+  }
+    .tag-divider {
+      margin: 0 5px;
+      color: #000000;
+    }
+  }
+ /* Custom styles */
+ 
+  .iconfilter {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333; 
+    cursor: pointer;/* Add a bottom border to the filter title */
+  }
+ 
+  /* Laptop and Desktop Styles */
+  @media screen and (min-width: 1024px) {
+    .sidebar {
+        position: absolute;
+        top: 250px;
+        left: -350px; /* Start offscreen */
+        width: 350px;
+        height: 100%;
+        background-color: #f8f9fa;
+        padding: 20px;
+        transition: left 0.5 ease-in-out;
+      
+      }
+      
+      .sidebar.show {
+        left: 0; /* Show the sidebar */
+      }
+      
+      
+      /* Show Filter button styles */
+      #filterToggle {
+        display: block;
+        width: 100%;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: #fbfbfb;
+        color: black;
+        font-size: 30px;
+      }
+      .mb-3 {
+        .btn-link {
+          font-size: 18px;
+          color: #000000;
+          font-family:Arial, Helvetica, sans-serif;
+          
+        }}
+        .products-row{
+          margin-left: -15%;
+          margin-right: -15%;
+        }
+       
+  }
+  /* Custom styles for the icon */
+#typeIcon {
+  font-size: 1.2rem;
+}
+/* Custom styles for the icon */
+.fas .fa-plus .show {
+  margin-left: 0px;
+  padding-left: 10%;
+
+}
+
+/* custom-styles.scss */
+.footer-heading {
+  color:#000000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Adjust the footer background and text color */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #333;
+$grey-color: #888;
+
+// Custom styles for the item count and view all
+.items-info {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  font-size: 16px;
+  color: $secondary-color;
+  font-weight: normal;
+  font-family:'Courier New', Courier, monospace;
+
+  // Style the item count to be on the left
+  .item-count {
+    margin-right: 10px;
+  }
+
+  // Style the view all link
+  .view-all {
+    color: $grey-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: $primary-color; // Change color on hover
+    }
+  }
+}
+.btn-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-flex; /* Use inline-flex to make it a flex container */
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  display: inline-flex; /* Use inline-flex to make it a flex container */
+  align-items: center; /* Center vertically */
+  justify-content: center;
+  border: 1px solid #777;
+  margin-right: 5px;}
+
+/* Customize the colors for the color options */
+.color-option.color-red {
+  background-color: rgb(243, 167, 244);
+}
+
+.color-option.color-blue {
+  background-color: rgb(196, 196, 209);
+}
+
+.color-option.color-green {
+  background-color: rgb(12, 2, 7);
+}
+.color-option.color-yelow {
+  background-color: rgb(250, 250, 157);
+}
+.container {
+  .row {
+    display: flex;
+    justify-content: center; // Center the row horizontally
+
+    .col-md-4 {
+      display: flex;
+      align-items: center;
+
+      h3.footer-heading {
+        margin-right: 10px; // Adjust this value as needed
+      }
+
+      ul.social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-left: 10px; // Adjust this value as needed to create space between h3 and icons
+
+        li {
+          margin-right: 10px; // Adjust this value as needed
+
+          a {
+            color: #000; // Set the color for the icons
+            font-size: 20px; // Set the font size for the icons
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom .footer-text {
+  font-size: 14px;
+  color: #777;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-bottom .legal li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom .legal li:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom .legal a {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Country Selector styles */
+.country-selector {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.country-selector .selector-label {
+  background-color: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.country-selector .selector-label i {
+  margin-right: 5px;
+}
+
+/* Icon styles */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Customize the icon's appearance */
+.fa-globe:before {
+  content: "\f0ac";
+  color: #777; /* Unicode of the globe icon from FontAwesome */
+}
+.colorgray{
+  color:#777 ;
+}
+/* Add this CSS to set a negative margin to counteract the sidebar padding */
+.products-row {
+  margin-left: -40px; /* Adjust the value as needed */
+  margin-right: -40px; /* Adjust the value as needed */
+}
+/* Custom styling for the range toggle button */
+.custom-control-label:before {
+  left: 0;
+  width: 3rem;
+}
+
+.custom-control-label:after {
+  left: 3rem;
+  width: 3rem;
+}
+
+/* Additional styles for dark mode */
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Add more styles as needed for other elements */

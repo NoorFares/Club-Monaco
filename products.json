@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Product 1",
+      "description": "Description of Product 1.",
+      "price": "$24.99",
+      "imageSrc": "img/img1.jpg",
+      "colors": ["Red", "Blue", "Green", "Yellow"]
+    },
+    {
+      "name": "Product 2",
+      "description": "Description of Product 2.",
+      "price": "$40.99",
+      "imageSrc": "img/img2.jpg",
+      "colors": ["Red", "Blue", "Green", "Black"]
+    },
+    {
+      "name": "Product 3",
+      "description": "Description of Product 3.",
+      "price": "$100.99",
+      "imageSrc": "img/img3.jpg",
+      "colors": ["White", "Silver", "Gold"]
+    },
+    {
+      "name": "Product 4",
+      "description": "Description of Product 4.",
+      "price": "$80.00",
+      "imageSrc": "img/img4.jpg",
+      "colors": ["Blue", "Green", "Purple"]
+    },
+    {
+      "name": "Product 5",
+      "description": "Description of Product 5.",
+      "price": "$19.99",
+      "imageSrc": "img/img5.jpg",
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "name": "Product 6",
+      "description": "Description of Product 6.",
+      "price": "$55.00",
+      "imageSrc": "img/img6.jpg",
+      "colors": ["Orange", "Pink", "Brown"]
+    },
+    {
+      "name": "Product 7",
+      "description": "Description of Product 7.",
+      "price": "$29.99",
+      "imageSrc": "img/img7.jpg",
+      "colors": ["Yellow", "Purple", "Turquoise"]
+    },
+    {
+      "name": "Product 8",
+      "description": "Description of Product 8.",
+      "price": "$45.50",
+      "imageSrc": "img/img8.jpg",
+      "colors": ["White", "Gray", "Gold"]
+    },
+    {
+      "name": "Product 9",
+      "description": "Description of Product 9.",
+      "price": "$75.99",
+      "imageSrc": "img/img9.jpg",
+      "colors": ["Green", "Brown", "Olive"]
+    },
+    {
+      "name": "Product 10",
+      "description": "Description of Product 10.",
+      "price": "$59.00",
+      "imageSrc": "img/img10.jpg",
+      "colors": ["Red", "Black", "Silver"]
+    }
+  ]
+  

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Mnaco Website</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo in center -->
+    <a class="navbar-brand" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Club_Monaco_logo.png/800px-Club_Monaco_logo.png" alt="Restaurant Logo" width="120">
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">New Arrivals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Women's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Men's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Club Classics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Red" href="#">Sale</a>
+        </li>
+        <li class="nav-item"> <!-- Hide on mobile -->
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item "> <!-- Hide on mobile -->
+          <a class="nav-link" href="#">Holiday Shop</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="icons">
+      <i class="bx bx-search h4 m-0 me-3"></i>
+      <i class="bx bx-heart h4 m-0 me-3 d-none d-lg-block"></i> <!-- Hide on mobile -->
+      <i class="bx bx-user h4 m-0 me-3 d-none d-lg-block"></i> <!-- Hide on mobile -->
+      <i class="bx bx-shopping-bag h4 m-0"></i>
+      
+    </div>
+    
+  </div>
+</nav>
+
+
+    <body>
+        <h6 class="text-center mb-4">Up to 60% off markdowns  Women's   Men's | Free shipping on orders over $99 Details</h6><hr>
+        <div class="tag">
+            <span class="tag-text">Men's</span>
+            <span class="tag-divider">/</span>
+            <span class="tag-text">Shops</span>
+            <span class="tag-divider">/</span>
+            <span class="tag-text gray">Club Classics</span>
+
+          </div>
+          
+           
+          <div class="container">
+            <div class="row justify-content-center align-items-center ">
+              <div class="col text-sm-start text-lg-center">
+                <h1> Club Classics</h1>
+             
+              </div>
+            </div>
+          </div>
+            <!-- Show Filter Button - Desktop View -->
+  <div class="container">
+    <div class="show-filter" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse" onclick="toggleSidebar()">
+      <img class="iconfilter" src="https://static-00.iconduck.com/assets.00/menu-circle-alt-2-icon-256x256-bn4bfovl.png" alt="Filter Icon">
+      <span class="filter-title">Show Filter</span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center justify-content-sm-center justify-content-lg-end ">
+        <div class="items-info">
+          <span class="item-count">1 - 30 of 99 Items <a href="#" class="view-all">View All</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+              <div class="container mt-4">
+            <div class="row">
+              <div class="col">
+                <!-- Button to toggle the sidebar -->
+                <button class="btn btn-primary mb-3 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse"  aria-controls="filterCollapse" id="filterToggle">
+                    REFINE
+                  </button>
+              </div>
+            </div>
+          </div>
+         
+          
+          
+          <div class="container mt-5"   id="allProducts ">
+            <div class="row justify-content-center">
+              
+              <!-- Product 1 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                <div class="card">
+                  <img src="img/img1.jpg" class="card-img-top" alt="Product 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <p class="card-text">Description of Product 1.</p>
+                    <p class="product-price">$24.99</p>
+                    <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                      <span class="color-option color-red"></span>
+                      <span class="color-option color-blue"></span>
+                      <span class="color-option color-green"></span>
+                      <span class="color-option color-yelow"></span>
+
+                    </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+ 
+              <!-- Product 2 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                <div class="card">
+                  <img src="img/img2.jpg" class="card-img-top" alt="Product 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 2</h5>
+                    <p class="card-text">Description of Product 2.</p>
+                    <p class="product-price">$40.99</p>
+                    <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                      <span class="color-option color-red"></span>
+                      <span class="color-option color-blue"></span>
+                      <span class="color-option color-green"></span>
+                      <span class="color-option color-yelow"></span>
+
+                    </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 3 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                <div class="card">
+                  <img src="img/img3.jpg" class="card-img-top" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 3</h5>
+                    <p class="card-text">Description of Product 3.</p>
+                    <p class="product-price">$100.99</p>
+                    <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                      <span class="color-option color-red"></span>
+                      <span class="color-option color-blue"></span>
+                      <span class="color-option color-green"></span>
+                      <span class="color-option color-yelow"></span>
+
+                    </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Center the next products -->
+          
+                <!-- Product 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                  <div class="card">
+                    <img src="img/img4.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 4</h5>
+                      <p class="card-text">Description of Product 4.</p>
+                      <p class="product-price">$124.99</p>
+                      <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                        <span class="color-option color-red"></span>
+                        <span class="color-option color-blue"></span>
+                        <span class="color-option color-green"></span>
+                        <span class="color-option color-yelow"></span>
+
+                      </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Product 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                  <div class="card">
+                    <img src="img/img5.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 5</h5>
+      
+                    <p class="card-text">Description of Product 5.</p>
+                      <p class="product-price">$40.99</p>
+                      <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                        <span class="color-option color-red"></span>
+                        <span class="color-option color-blue"></span>
+                        <span class="color-option color-green"></span>
+                        <span class="color-option color-yelow"></span>
+
+                      </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4 d-b-block d-md-none">
+                  <!-- The 'd-none' class will hide the element on screens larger than 'sm' (576px) -->
+                  <!-- The 'd-md-block' class will show the element on screens larger than 'md' (768px) -->
+                  <div class="card">
+                    <img src="img/img6.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 6</h5>
+                      <p class="card-text">Description of Product 6.</p>
+                      <p class="product-price">$40.99</p>
+                      <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                        <span class="color-option color-red"></span>
+                        <span class="color-option color-blue"></span>
+                        <span class="color-option color-green"></span>
+                        <span class="color-option color-yelow"></span>
+
+                      </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                
+          
+              <div class="container mt-5">
+                <div class="row justify-content-center">
+                  <!-- Product 1 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                    <div class="card">
+                      <img src="img/img7.jpg" class="card-img-top" alt="Product 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 7</h5>
+                        <p class="card-text">Description of Product 7.</p>
+                        <p class="product-price">$24.99</p>
+                        <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                          <span class="color-option color-red"></span>
+                          <span class="color-option color-blue"></span>
+                          <span class="color-option color-green"></span>
+                          <span class="color-option color-yelow"></span>
+
+                        </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Product 2 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                    <div class="card">
+                      <img src="img/img8.jpg" class="card-img-top" alt="Product 2">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 8</h5>
+                        <p class="card-text">Description of Product 8.</p>
+                        <p class="product-price">$40.99</p>
+                        <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                          <span class="color-option color-red"></span>
+                          <span class="color-option color-blue"></span>
+                          <span class="color-option color-green"></span>
+                          <span class="color-option color-yelow"></span>
+
+                        </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Product 3 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                    <div class="card">
+                      <img src="img/img9.jpg" class="card-img-top" alt="Product 3">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 9</h5>
+                        <p class="card-text">Description of Product 9.</p>
+                        <p class="product-price">$100.99</p>
+                        <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                          <span class="color-option color-red"></span>
+                          <span class="color-option color-blue"></span>
+                          <span class="color-option color-green"></span>
+                          <span class="color-option color-yelow"></span>
+
+                        </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Center the next products -->
+              
+                    <!-- Product 4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                      <div class="card">
+                        <img src="img/imge10.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 9</h5>
+                          <p class="card-text">Description of Product 9.</p>
+                          <p class="product-price">$124.99</p>
+                          <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                            <span class="color-option color-red"></span>
+                            <span class="color-option color-blue"></span>
+                            <span class="color-option color-green"></span>                           
+                             <span class="color-option color-yelow"></span>
+
+
+
+                          </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4 d-none d-md-block">
+                      <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 10</h5>
+                          <p class="card-text">Description of Product 10.</p>
+                          <p class="product-price">$40.99</p>
+                          <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                            <span class="color-option color-red"></span>
+                            <span class="color-option color-blue"></span>
+                            <span class="color-option color-green"></span>
+                            <span class="color-option color-yelow"></span>
+
+                          </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                        </div>
+                      </div>                    
+                    
+                    </div>
+                  </div>
+                    
+          
+          <div class="container mt-5"   id="allProducts ">
+            <div class="row justify-content-center">
+              
+              <!-- Product 1 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                <div class="card">
+                  <img src="img/img1.jpg" class="card-img-top" alt="Product 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <p class="card-text">Description of Product 1.</p>
+                    <p class="product-price">$24.99</p>
+                    <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                      <span class="color-option color-red"></span>
+                      <span class="color-option color-blue"></span>
+                      <span class="color-option color-green"></span>
+                      <span class="color-option color-yelow"></span>
+
+                    </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 2 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                <div class="card">
+                  <img src="img/img2.jpg" class="card-img-top" alt="Product 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 2</h5>
+                    <p class="card-text">Description of Product 2.</p>
+                    <p class="product-price">$40.99</p>
+                    <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                      <span class="color-option color-red"></span>
+                      <span class="color-option color-blue"></span>
+                      <span class="color-option color-green"></span>
+                      <span class="color-option color-yelow"></span>
+
+                    </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Product 3 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                <div class="card">
+                  <img src="img/img3.jpg" class="card-img-top" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 3</h5>
+                    <p class="card-text">Description of Product 3.</p>
+                    <p class="product-price">$100.99</p>
+                    <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                      <span class="color-option color-red"></span>
+                      <span class="color-option color-blue"></span>
+                      <span class="color-option color-green"></span>
+                      <span class="color-option color-yelow"></span>
+
+                    </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Center the next products -->
+          
+                <!-- Product 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                  <div class="card">
+                    <img src="img/img4.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 4</h5>
+                      <p class="card-text">Description of Product 4.</p>
+                      <p class="product-price">$124.99</p>
+                      <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                        <span class="color-option color-red"></span>
+                        <span class="color-option color-blue"></span>
+                        <span class="color-option color-green"></span>
+                        <span class="color-option color-yelow"></span>
+
+                      </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Product 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                  <div class="card">
+                    <img src="img/img5.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 5</h5>
+      
+                    <p class="card-text">Description of Product 5.</p>
+                      <p class="product-price">$40.99</p>
+                      <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                        <span class="color-option color-red"></span>
+                        <span class="color-option color-blue"></span>
+                        <span class="color-option color-green"></span>
+                        <span class="color-option color-yelow"></span>
+
+                      </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4 d-b-block d-md-none">
+                  <!-- The 'd-none' class will hide the element on screens larger than 'sm' (576px) -->
+                  <!-- The 'd-md-block' class will show the element on screens larger than 'md' (768px) -->
+                  <div class="card">
+                    <img src="img/img6.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 6</h5>
+                      <p class="card-text">Description of Product 6.</p>
+                      <p class="product-price">$40.99</p>
+                      <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                        <span class="color-option color-red"></span>
+                        <span class="color-option color-blue"></span>
+                        <span class="color-option color-green"></span>
+                        <span class="color-option color-yelow"></span>
+
+                      </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                
+          
+              <div class="container mt-5">
+                <div class="row justify-content-center">
+                  <!-- Product 1 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                    <div class="card">
+                      <img src="img/img14.webp" class="card-img-top" alt="Product 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 7</h5>
+                        <p class="card-text">Description of Product 7.</p>
+                        <p class="product-price">$24.99</p>
+                        <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                          <span class="color-option color-red"></span>
+                          <span class="color-option color-blue"></span>
+                          <span class="color-option color-green"></span>
+                          <span class="color-option color-yelow"></span>
+
+                        </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Product 2 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                    <div class="card">
+                      <img src="img/img12.webp" class="card-img-top" alt="Product 2">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 8</h5>
+                        <p class="card-text">Description of Product 8.</p>
+                        <p class="product-price">$40.99</p>
+                        <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                          <span class="color-option color-red"></span>
+                          <span class="color-option color-blue"></span>
+                          <span class="color-option color-green"></span>
+                          <span class="color-option color-yelow"></span>
+
+                        </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Product 3 -->
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                    <div class="card">
+                      <img src="img/img1.jpg" class="card-img-top" alt="Product 3">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 9</h5>
+                        <p class="card-text">Description of Product 9.</p>
+                        <p class="product-price">$100.99</p>
+                        <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                          <span class="color-option color-red"></span>
+                          <span class="color-option color-blue"></span>
+                          <span class="color-option color-green"></span>
+                          <span class="color-option color-yelow"></span>
+
+                        </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Center the next products -->
+              
+                    <!-- Product 4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+                      <div class="card">
+                        <img src="img/imge10.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 9</h5>
+                          <p class="card-text">Description of Product 9.</p>
+                          <p class="product-price">$124.99</p>
+                          <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                            <span class="color-option color-red"></span>
+                            <span class="color-option color-blue"></span>
+                            <span class="color-option color-green"></span>                           
+                             <span class="color-option color-yelow"></span>
+
+
+
+                          </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-2 d-none d-md-block">
+                      <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 10</h5>
+                          <p class="card-text">Description of Product 10.</p>
+                          <p class="product-price">$40.99</p>
+                          <div class="d-flex justify-content-center"> <!-- Use d-flex and justify-content-center to center the color options -->
+                            <span class="color-option color-red"></span>
+                            <span class="color-option color-blue"></span>
+                            <span class="color-option color-green"></span>
+                            <span class="color-option color-yelow"></span>
+
+                          </div>
+<!-- Your "Buy Now" button -->
+<a href="#" class="btn btn-primary Buy" data-bs-toggle="modal" data-bs-target="#productModal">Buy Now</a>
+                        </div>
+                      </div>                    
+                    
+                    </div>
+                  </div>
+                 <!-- The Modal -->
+<!-- The Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+      <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Product Image (Left) -->
+            <div class="product-image"></div>
+          </div>
+          <div class="col-md-6">
+            <!-- Product Details (Right) -->
+            <h5 class="product-title"></h5>
+            <p class="product-description"></p>
+            <p class="product-price"></p>
+            <div class="d-flex  product-colors"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+<div class="collapse" id="filterCollapse">
+   <!-- Sidebar -->
+   <div class="sidebar   ">
+    <!-- Filter Collapse Section -->
+    
+    <div class="collapse " id="filterCollapse">
+      <!-- Type Filter -->
+     
+  <!-- Refine and Done Buttons (Mobile View) -->
+  <div class="d-md-none">
+    <div class="row mx-0 align-items-center">
+      <!-- Refine Button -->
+      <div class="col-4 px-0">
+        <p class=" text-black text-uppercase">Refine</p>
+      </div>
+
+      <!-- Two Clear Buttons with White Background and Black Border -->
+      <div class="col-4 px-2">
+        <button class="btn btn-block btn-light border-black text-black text-uppercase" style="background-color: #ffff;">Clear</button>
+      </div>
+
+      <!-- Done Button with Black Background -->
+      <div class="col-4 px-2">
+        <button class="btn btn-block btn-black border-black text-white text-uppercase" id="doneButton" style="background-color: #000000; padding-right: 30px;" data-bs-toggle="collapse" data-bs-target=".sidebar" aria-expanded="false" aria-controls="filterCollapse">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="mb-3">
+        <button class="accordion-button btn btn-link black-text" type="button" data-bs-toggle="collapse" data-bs-target="#typeCollapse" aria-expanded="false" aria-controls="typeCollapse" id="typeToggle">
+          <div class="d-flex justify-content-between align-items-center">
+            <span>Type</span>
+            <span id="sizeIcon">
+              <i class="fas fa-plus show"></i>
+            </span>
+          </div>
+        </button>
+
+        <hr>
+        <div class="collapse " id="typeCollapse">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="typeMaxi" value="maxi">
+            <label class="form-check-label" for="typeMaxi">Maxi</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="typeMidi" value="midi">
+            <label class="form-check-label" for="typeMidi">Midi</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="typeMini" value="mini">
+            <label class="form-check-label" for="typeMini">Mini</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="typeRomper" value="romper">
+            <label class="form-check-label" for="typeRomper">Romper</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="typeJumpsuit" value="jumpsuit">
+            <label class="form-check-label" for="typeJumpsuit">Jumpsuit</label>
+          </div>
+        </div>
+      </div>
+      <!-- Size Filter -->
+      <div class="mb-3">
+        <button class="accordion-button btn btn-link black-text" type="button" data-bs-toggle="collapse" data-bs-target="#sizeCollapse" aria-expanded="false" aria-controls="sizeCollapse" id="sizeToggle">
+          <div class="d-flex justify-content-between align-items-center">
+            <span>Size</span>
+            <span id="sizeIcon">
+              <i class="fas fa-plus show"></i>
+            </span>
+          </div>
+        </button>
+        
+        <hr>
+
+        <div class="collapse " id="sizeCollapse">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="sizeMedium" value="medium">
+            <label class="form-check-label" for="sizeMedium">Medium</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="sizeLarge" value="large">
+            <label class="form-check-label" for="sizeLarge">Large</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="sizeXXL" value="xxl">
+            <label class="form-check-label" for="sizeXXL">XX-Large</label>
+          </div>
+        </div>
+      </div>
+      <!-- Color Filter -->
+      <div class="mb-3">
+        <button class="accordion-button btn btn-link black-text" type="button" data-bs-toggle="collapse" data-bs-target="#colorCollapse" aria-expanded="false" aria-controls="colorCollapse" id="colorToggle">
+  <div class="d-flex justify-content-between align-items-center">
+    <span>Color</span>
+    <span id="sizeIcon">
+      <i class="fas fa-plus show"></i>
+    </span>
+  </div>
+</button>
+
+        <hr>
+        <div class="collapse " id="colorCollapse">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="colorRed" value="red">
+            <label class="form-check-label" for="colorRed">Red</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="colorBlue" value="blue">
+            <label class="form-check-label" for="colorBlue">Blue</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="colorGreen" value="green">
+            <label class="form-check-label" for="colorGreen">Green</label>
+          </div>
+        </div>
+      </div>
+      <!-- Price Filter -->
+      <div class="mb-3">
+        <button class="accordion-button btn btn-link black-text" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse" aria-expanded="false" aria-controls="priceCollapse" id="priceToggle">
+          <div class="d-flex justify-content-between align-items-center">
+            <span>Price</span>
+            <span id="sizeIcon">
+              <i class="fas fa-plus show"></i>
+            </span>
+          </div>
+        </button>
+        <hr> 
+        <div class="collapse " id="priceCollapse">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="priceLow" value="low">
+            <label class="form-check-label" for="priceLow">Low</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="priceMedium" value="medium">
+            <label class="form-check-label" for="priceMedium">Medium</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="priceHigh" value="high">
+            <label class="form-check-label" for="priceHigh">High</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>        
+</div>
+
+
+
+
+
+
+
+
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="footer-heading">#CLUBMONACO</h3>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-instagram"> </i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-">
+
+  <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class=" mb-4">Support</h5>
+
+        <ul class="list-unstyled mb-4">
+          <li>
+            <a href="#!"class="text-black">Contact Us
+             </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black">
+              FAQ
+             </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black"> Student Discount
+              </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black">Refer a Friend </a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="mb-4">Shipping & Returns
+        </h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-black">        Track Your Order
+
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black">        Shipping Rates
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black">        Returns & Exchanges
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black">        Start Your Return
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black"> Purchase a Gift Card
+              </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black"> 
+              Check Gift Card Balance</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class=" mb-4">About Club
+          </h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-black">Our Story
+             </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black"> Store Locator
+              </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black">Careers
+             </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black"> Fabrics & Care
+              </a>
+          </li>
+          <li>
+            <a href="#!" class="text-black text-lg-start">UK and California Transparency Act</a>
+          </li>
+
+        </ul>
+      </div>
+<!--Grid column-->
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+  <h5 class=" mb-9">Let's Keep In Touch.</h5>
+  <div class="footer-email-inner">
+    <form action="/on/demandware.store/Sites-ClubMonaco_US-Site/en_US/ZetaSubscribe-FooterSignUp" method="post" id="email-alert-signup" class="email-subscribe needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-12 mb-6">
+          <div class="input-group">
+            <input type="email" id="email-alert-address" class="form-control input-text email required empty custom-input" placeholder=" Email Address" value="" name="dwfrm_emailsubscribe_email" required aria-describedby="email-alert-address-error" aria-invalid="true">
+            <span class="input-group-append">
+              <button type="submit" name="home-email" value="Submit" title="Join" class="btn btn-primary custom-btn" style="background-color: black; color: #ffff; border-color: black;">Join</button>
+            </span>
+          </div>
+          <div class="invalid-feedback">
+            This field is required.
+          </div>
+        </div>
+        
+       
+      </div>
+    </form>
+    <span class="EmailErrorMsg"></span>
+    <div id="EmailSuccess" class="email-success hide">
+      <div class="thank-msg"></div>
+    </div>
+  </div>
+  <div class="footer-email-opt-in-text">
+    <div class="content-asset mb-6">
+      <span>Sign up to receive emails on everything new, <br>special offers, and exclusive events.</span>
+    </div>
+  </div>
+</div>
+<!--Grid column-->
+
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <!-- Copyright and Legal Links -->
+        <div class="col-md-12">
+         
+          <ul class="legal"> 
+            <p class="footer-text">&copy; 2023 Club Monaco Corp.</p>
+            <li><a href="https://www.clubmonaco.com/en/sitemap">Site Map</a></li>
+            <li><a href="https://www.clubmonaco.com/en/privacy-notice/privacy-policy.html">Privacy Notice</a></li>
+            <li><a href="https://www.clubmonaco.com/en/terms-of-use/terms-of-use.html">Terms of Use</a></li>
+           <li><a class="colorgray">Ship To:</a></li>
+          <li>
+            <span>
+            <a class="selector-label" role="button" aria-expanded="false" aria-label="Country selector. Select to change country setting. Current country selected: US English"></a>
+              <i class="fa fa-globe"></i>
+              <a class="ctry-hdr ">US English</a>
+            </button></span></li></ul>
+      
+
+        
+        </div>
+      </div>
+    </div>
+</footer>
+
+  
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    </body>
+    <script src="js/main.js">
+   
+
+
+  </script>
+  <script src="js/product.js"></script>
+<script>
+ 
+</script>
+
+   
+</html>
